@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="3dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="9dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/udate2"
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/themeColor"
+            android:textSize="21dp" />
+
+        <TextView
+            android:drawableTint="@color/themeColor"
+            android:drawableLeft="@drawable/ic_phone"
+            android:id="@+id/uphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:layout_marginTop="9dp"/>
+
+        <TextView
+            android:drawableTint="@color/themeColor"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:id="@+id/uemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:layout_marginTop="9dp"/>
+
+        <TextView
+            android:id="@+id/ufish"
+            android:textSize="21sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:layout_marginTop="9dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

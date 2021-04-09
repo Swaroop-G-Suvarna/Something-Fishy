@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hosLayout"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".fragment.NearByFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near by"
+            android:textColor="@color/themeColor"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text=" Escorts"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The standard Lorem Ipsum passag"
+        android:textSize="14dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:paddingBottom="9dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_sms_button"
+            android:drawablePadding="8dp"
+            android:text="50KM"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/ten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_button"
+            android:drawablePadding="8dp"
+            android:text="100KM"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/twofive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_button"
+            android:drawablePadding="8dp"
+            android:text="All"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/escortsRecycle"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

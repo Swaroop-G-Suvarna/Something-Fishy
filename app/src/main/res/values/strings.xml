@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Fishing-Master</string>
+    <string name="splash_title">Sea Fishing</string>
+    <string name="splash_txt">Lorem ipsum dolor amet</string>
+    <string name="share">Share</string>
+    <string name="about">About Us</string>
+    <string name="contactus">Contact Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="homepage">Home</string>
+    <string name="other">Others</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="magazine">Magazine</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="view_all">View All</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="contact_number">Number</string>
+    <string name="cpassword">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="reset">Reset</string>
+    <string name="waite">Please wait ...</string>
+    <string name="message">Your task in progress ...</string>
+    <string name="escorts">Escorts</string>
+    <string name="map">Map</string>
+    <string name="emergency">Emergency</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="reserve">Reserve</string>
+    <string name="request">Pre-order</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/feedbackLayout"
+    tools:context=".fragment.FeedBackFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you think of our app?"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        android:textSize="21sp"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toggle_button_group"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_baseline_sentiment_very_0"
+            android:text="Bad"
+            android:textSize="10sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_baseline_sentiment_1"
+            android:text="Poor"
+            android:textSize="10sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_baseline_sentiment_2"
+            android:text="Ok"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_baseline_sentiment_3"
+            android:text="Good"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_baseline_sentiment_very_5"
+            android:text="Great"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What would you like to share with us?"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginHorizontal="15dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="4dp">
+
+        <EditText
+            android:padding="10dp"
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text|textMultiLine"
+            android:hint="Your Thoughts..."
+            android:background="@null"
+            android:gravity="top"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/call_button"
+        android:id="@+id/sendFeedback"
+        android:text="Send"/>
+
+
+</LinearLayout>

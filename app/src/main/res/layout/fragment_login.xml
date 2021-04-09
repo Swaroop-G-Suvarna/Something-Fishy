@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LoginFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Login"
+                android:textColor="@color/themeColor"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/user_id"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:inputType="text"
+                android:hint="@string/email_id"
+                android:textColor="@color/black"
+                android:textColorHint="@color/themeColor"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edit"
+                android:padding="10dp"
+                />
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:textColorHint="@color/themeColor"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Forgot Password?"
+                android:textColor="@color/themeColor"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="right"
+                android:textSize="15sp"
+                android:layout_marginEnd="35dp"
+                android:gravity="center_vertical"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:text="Login"
+                android:textColor="#fff"
+                android:background="@drawable/alert_button"
+                />
+
+            <ProgressBar
+                android:layout_marginTop="21dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/progress"
+                android:indeterminateTint="@color/themeColor"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

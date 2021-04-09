@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="3dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="9dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/hname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rescue Center name"
+                android:textColor="@color/themeColor"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/haddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_margin="6dp"/>
+
+            <TextView
+                android:drawableTint="@color/themeColor"
+                android:drawableLeft="@drawable/ic_phone"
+                android:id="@+id/hphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_margin="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                android:id="@+id/location"
+                app:backgroundTint="#FF9800"
+                app:tint="@color/white"
+                android:src="@drawable/ic_baseline_map_24"
+                android:layout_margin="9dp"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                android:id="@+id/call"
+                app:backgroundTint="#FF9800"
+                app:tint="@color/white"
+                android:src="@drawable/ic_phone"
+                android:layout_margin="9dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

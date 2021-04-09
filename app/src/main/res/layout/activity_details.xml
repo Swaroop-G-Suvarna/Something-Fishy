@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:id="@+id/detaillayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:layout_weight="3">
+        <ImageView
+            android:id="@+id/imagefish"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/loading"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:id="@+id/pdate"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginTop="9dp"
+            android:paddingHorizontal="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:id="@+id/fname"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingHorizontal="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:id="@+id/bname"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingHorizontal="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:id="@+id/bno"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingHorizontal="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/ardate"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingHorizontal="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Description"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingHorizontal="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/bdesc"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/request"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="reserve"
+        android:background="@drawable/call_button"
+        android:drawablePadding="8dp"
+        android:paddingHorizontal="25dp"
+        android:text="@string/reserve"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="18sp" />
+
+</LinearLayout>
