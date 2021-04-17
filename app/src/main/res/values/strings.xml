@@ -33,4 +33,10 @@
     <string name="title_activity_maps">Map</string>
     <string name="reserve">Reserve</string>
     <string name="request">Pre-order</string>
+    <string name="addfish">Add Fish</string>
+    <string name="fishname">Fish Name</string>
+    <string name="fisharrdate">Arriving Date (YYYY-MM-DD)</string>
+    <string name="desc">Description</string>
+    <string name="submit">Submit</string>
+    <string name="requestm">Request</string>
 </resources>

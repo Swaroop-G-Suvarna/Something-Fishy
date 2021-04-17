@@ -59,13 +59,16 @@ public class DetailsActivity extends AppCompatActivity {
         aardate.setText("Arriving on"+getIntent().getStringExtra("arrdate"));
         postdate.setText("Posted on : "+getIntent().getStringExtra("posted"));
 
-        Picasso.get().load("http://192.168.43.124/fishing-master-php/img/"+getIntent().getStringExtra("image")).into(fimage);
-
         dialog = new ProgressDialog(this,R.style.AppCompatAlertDialogStyle);
         dialog.setCancelable(false);
         dialog.setTitle(R.string.waite);
         dialog.setIcon(R.drawable.boat);
         dialog.setMessage(getString(R.string.message));
+
+        try{
+            Picasso.get().load("http://192.168.43.124/fishing-master-php/img/"+getIntent().getStringExtra("image")).into(fimage);
+        }
+        catch (Exception e){}
 
     }
 

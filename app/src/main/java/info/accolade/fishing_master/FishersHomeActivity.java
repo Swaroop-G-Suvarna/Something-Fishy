@@ -21,6 +21,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
 import info.accolade.fishing_master.fragment.AboutFragment;
+import info.accolade.fishing_master.fragment.AddFishFragment;
 import info.accolade.fishing_master.fragment.ContactFragment;
 import info.accolade.fishing_master.fragment.FeedBackFragment;
 import info.accolade.fishing_master.fragment.FishersHomeFragment;
@@ -91,6 +92,10 @@ public class FishersHomeActivity extends AppCompatActivity implements Navigation
         {
             case R.id.homepagef:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentfisher, new FishersHomeFragment()).commit();
+                break;
+
+            case R.id.addfish:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentfisher, new AddFishFragment()).commit();
                 break;
 
             case R.id.escorts:

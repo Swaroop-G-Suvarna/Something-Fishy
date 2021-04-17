@@ -2,6 +2,7 @@ package info.accolade.fishing_master.utils;
 
 import java.util.List;
 
+import info.accolade.fishing_master.modal.CategoryModal;
 import info.accolade.fishing_master.modal.DefaultResponceModal;
 import info.accolade.fishing_master.modal.EmergencyModal;
 import info.accolade.fishing_master.modal.LoginResponse;
@@ -79,4 +80,24 @@ public interface ApiInterface {
     Call<List<RequestModal>> getViewRequestData(
             @Field("BoatNumber") String num
     );
+
+    @FormUrlEncoded
+    @POST("viewuserrequest.php")
+    Call<List<RequestModal>> getViewUserRequestData(
+            @Field("uid") String uid
+    );
+
+    @FormUrlEncoded
+    @POST("addfish.php")
+    Call<DefaultResponceModal> getFishResponce(
+            @Field("name") String name,
+            @Field("desc") String desc,
+            @Field("date") String date,
+            @Field("nameimg") String password,
+            @Field("img") String img,
+            @Field("boatname") String boatname,
+            @Field("boatno") String boatno
+    );
+
+
 }

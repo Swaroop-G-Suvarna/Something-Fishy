@@ -8,6 +8,11 @@
             android:icon="@drawable/ic_baseline_home_24"/>
 
         <item
+            android:id="@+id/requestm"
+            android:title="@string/requestm"
+            android:icon="@drawable/ic_baseline_request_quote_24"/>
+
+        <item
             android:id="@+id/search"
             android:title="@string/search"
             android:icon="@drawable/ic_baseline_search_24"/>

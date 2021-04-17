@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/addFishLayout2"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="25dp"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddFishFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Add Fish"
+        android:textColor="@color/themeColor"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/logImg"
+            android:layout_width="150dp"
+            android:padding="21dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            />
+    </FrameLayout>
+
+    <EditText
+        android:layout_marginBottom="18dp"
+        android:paddingHorizontal="15dp"
+        android:id="@+id/fname2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPersonName"
+        android:hint="@string/fishname"
+        android:textColor="@color/black"
+        android:textColorHint="@color/themeColor"
+        android:layout_gravity="center"
+        android:background="@drawable/edit"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/fdate2"
+        android:layout_marginBottom="18dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPersonName"
+        android:hint="@string/fisharrdate"
+        android:textColor="@color/black"
+        android:textColorHint="@color/themeColor"
+        android:layout_gravity="center"
+        android:background="@drawable/edit"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:padding="10dp"
+        android:id="@+id/fdesc2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:inputType="text|textMultiLine"
+        android:hint="@string/desc"
+        android:textColorHint="@color/themeColor"
+        android:background="@drawable/edit"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/fsubmit2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:textColor="#fff"
+        android:background="@drawable/call_button"
+        />
+
+
+</LinearLayout>

@@ -46,13 +46,20 @@ public class ForgotActivity extends AppCompatActivity {
     }
 
     public void btnForgot(View view) {
-        dialog.show();
         email = ed_email.getText().toString().trim();
 
         checkValidation();
     }
     private void checkValidation() {
-        sendData();
+        if(!email.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")||email.isEmpty())
+        {
+            ed_email.setError("Kindly enter valid email..");
+        }
+        else
+        {
+            dialog.show();
+            sendData();
+        }
     }
     private void sendData() {
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
@@ -75,7 +82,7 @@ public class ForgotActivity extends AppCompatActivity {
                             else
                             {
                                 Log.e("unable to send mail", "");
-                                Snackbar.make(layout, "Unable to process your request..", Snackbar.LENGTH_LONG)
+                                Snackbar.make(layout, "Invalid data you provided..", Snackbar.LENGTH_LONG)
                                         .setAction("Retry", new View.OnClickListener() {
                                             @Override
                                             public void onClick(View v) {

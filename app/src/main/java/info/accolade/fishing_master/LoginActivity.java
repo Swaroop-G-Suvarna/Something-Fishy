@@ -63,8 +63,18 @@ public class LoginActivity extends AppCompatActivity {
         checkValidation();
     }
     private void checkValidation() {
-        dialog.show();
-        sendData();
+        if(!email.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")||email.isEmpty())
+        {
+            ed_email.setError("Kindly enter valid email..");
+        }
+        else if(password.length()<5)
+        {
+            ed_password.setError("Kindly enter valid password..");
+        }
+        else {
+            dialog.show();
+            sendData();
+        }
     }
     private void sendData() {
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);

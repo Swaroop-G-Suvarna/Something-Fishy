@@ -31,6 +31,7 @@ import info.accolade.fishing_master.fragment.MagazineFragment;
 import info.accolade.fishing_master.fragment.MapsFragment;
 import info.accolade.fishing_master.fragment.NearByFragment;
 import info.accolade.fishing_master.fragment.SearchFragment;
+import info.accolade.fishing_master.fragment.ViewRequestFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     MaterialToolbar toolbar;
@@ -93,6 +94,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.search:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new SearchFragment()).commit();
+                break;
+            case R.id.requestm:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new ViewRequestFragment()).commit();
                 break;
 
             case R.id.about:

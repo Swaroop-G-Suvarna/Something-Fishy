@@ -65,8 +65,31 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void checkValidation() {
-        dialog.show();
-        sendData();
+        if(name.length()<3)
+        {
+            ed_name.setError("Name must be three or more character long..");
+        }
+        else if(number.length()!=10)
+        {
+            ed_number.setError("Kindly enter 10 digit number..");
+        }
+        else if(!email.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")||email.isEmpty())
+        {
+            ed_email.setError("Kindly enter valid email..");
+        }
+        else if(password.length()<5)
+        {
+            ed_password.setError("Password must be five or more character long..");
+        }
+        else if(!cpassword.matches(password))
+        {
+            ed_cpassword.setError("Password mismatch..");
+        }
+        else
+        {
+            dialog.show();
+            sendData();
+        }
     }
 
     private void sendData() {
