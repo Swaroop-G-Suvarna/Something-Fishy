@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:text=" Fishing Master"
+                android:text=" Fresh Fins"
                 android:textSize="24dp" />
 
         </LinearLayout>
@@ -42,30 +42,42 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="24dp"/>
 
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem Ipsum"
+            android:layout_marginTop="9dp"
+            android:text="At Fresh Fins, we believe that great health starts with great food. Our mission is to bring the freshest, highest-quality seafood right to your doorstep, making it easy for you to enjoy delicious, sustainable seafood anytime"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our story"
             android:textSize="18dp"
             android:layout_marginTop="15dp"
             android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Founded in 2024 by seafood enthusiasts frustrated with market inconsistencies, Fresh Fins was created to revolutionize seafood shopping. With expertise in marine biology, culinary arts, and logistics, our founders set out to provide a seamless, reliable seafood experience.
+
+"/><TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What we offer"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="9dp"
-            android:text="The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:text=", sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."/>
+            android:text="We offer a variety of seafood, from wild-caught salmon to farm-raised shrimp, ensuring something for every seafood lover. Committed to eco-friendly fishing practices, our seafood is both delicious and responsible. Delivered within 24 hours of catch, our seafood guarantees peak freshness. Ordering is easy with our app, bringing fresh seafood to your door with just a few taps."/>
 
     </LinearLayout>
 

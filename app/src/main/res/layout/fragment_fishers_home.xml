@@ -54,7 +54,7 @@
             android:layout_marginTop="6dp"
             android:lineSpacingExtra="8dp"
             android:justificationMode="inter_word"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation."
+            android:text="Clicking the emergency button will notify the nearest lifeguard and emergency services by sending a distress signal along with your location. Make sure to keep your location services on."
             android:textColor="@color/black" />
 
             <androidx.appcompat.widget.AppCompatButton

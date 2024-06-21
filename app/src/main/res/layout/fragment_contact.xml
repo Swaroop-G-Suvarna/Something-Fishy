@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2.5"
-        android:text="Fishing Master\nPremium Enclave, 3rd Floor,\nShop No.22 and 23,\nLight house hill Road, Hampankatta,\nMangalore- 575001\nKARNATAKA."
+        android:text="Fresh Fins HQ\n Sri Devi Kripa, 2nd Floor,\nShop No.7 and 8,\nKula Road, Vidyanagara, Panjimogaru,\nMangalore- 575013\nKARNATAKA."
         android:textSize="21sp"
         android:textStyle="bold"/>
 
@@ -62,7 +62,7 @@
         android:id="@+id/txtPhone1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="9900448554"
+        android:text="9019711264"
         android:textSize="16sp"/>
 
     <TextView
@@ -76,7 +76,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="support@domain.com"
+        android:text="clownmafiaopera@gmail.com"
         android:textSize="16sp"/>
 
     <TextView
@@ -90,7 +90,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="http://www.accoladetechsolutions.com"
+        android:text="https://github.com/Swaroop-G-Suvarna/Something-Fishy.git"
         android:textSize="16sp"/>
 
 </LinearLayout>
