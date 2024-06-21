@@ -1,5 +1,7 @@
 package info.accolade.fishing_master.adapter;
 
+import static info.accolade.fishing_master.utils.ApiInterface.BASE_URL;
+
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -43,10 +45,10 @@ public class SearchBoatAdapater  extends RecyclerView.Adapter<SearchBoatAdapater
         holder.boatno2.setText("No : "+searchModal.get(position).getBoatno());
         holder.arrdate2.setText("Arriving on : "+searchModal.get(position).getArrivingdate());
         holder.fishname2.setText("Fish : "+searchModal.get(position).getFishname());
-        holder.postdate2.setText("Posted on : "+searchModal.get(position).getCreateddate());
+        holder.postdate2.setText(searchModal.get(position).getCreateddate());
 
         try{
-        Picasso.get().load("http://192.168.43.124/fishing-master-php/img/" + searchModal.get(position).getImage()).into(holder.bk_imga);
+        Picasso.get().load(BASE_URL + "img/" + searchModal.get(position).getImage()).into(holder.bk_imga);
         }
         catch (Exception e){}
     }

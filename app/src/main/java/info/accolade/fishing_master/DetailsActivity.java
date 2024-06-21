@@ -1,5 +1,7 @@
 package info.accolade.fishing_master;
 
+import static info.accolade.fishing_master.utils.ApiInterface.BASE_URL;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
@@ -57,7 +59,7 @@ public class DetailsActivity extends AppCompatActivity {
         bno.setText("Boat Number : "+getIntent().getStringExtra("bno"));
         fname.setText("Fish Name : "+getIntent().getStringExtra("fish"));
         aardate.setText("Arriving on"+getIntent().getStringExtra("arrdate"));
-        postdate.setText("Posted on : "+getIntent().getStringExtra("posted"));
+        postdate.setText(getIntent().getStringExtra("posted"));
 
         dialog = new ProgressDialog(this,R.style.AppCompatAlertDialogStyle);
         dialog.setCancelable(false);
@@ -66,7 +68,7 @@ public class DetailsActivity extends AppCompatActivity {
         dialog.setMessage(getString(R.string.message));
 
         try{
-            Picasso.get().load("http://192.168.43.124/fishing-master-php/img/"+getIntent().getStringExtra("image")).into(fimage);
+            Picasso.get().load(BASE_URL + "img/"+getIntent().getStringExtra("image")).into(fimage);
         }
         catch (Exception e){}
 

@@ -17,6 +17,8 @@ import retrofit2.http.POST;
 
 public interface ApiInterface {
 
+    String BASE_URL = "http://192.168.145.235/fishing-php/";
+
     @FormUrlEncoded
     @POST("register.php")
     Call<DefaultResponceModal> getResponce(
@@ -98,6 +100,4 @@ public interface ApiInterface {
             @Field("boatname") String boatname,
             @Field("boatno") String boatno
     );
-
-
 }

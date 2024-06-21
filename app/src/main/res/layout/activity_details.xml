@@ -81,12 +81,18 @@
             android:text="Description"
             android:textStyle="bold"/>
 
-        <TextView
-            android:paddingHorizontal="27dp"
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:id="@+id/bdesc"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingHorizontal="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/bdesc"/>
+        </androidx.core.widget.NestedScrollView>
+
+
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton

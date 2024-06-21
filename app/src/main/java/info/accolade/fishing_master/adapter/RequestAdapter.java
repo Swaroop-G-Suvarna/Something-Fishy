@@ -37,7 +37,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull RequestAdapter.ViewHolder holder, int position) {
         holder.name.setText("Name : "+requestModal.get(position).getUserName());
-        holder.date.setText("Date : "+requestModal.get(position).getRequestDate());
+        holder.date.setText(requestModal.get(position).getRequestDate());
         holder.email.setText(requestModal.get(position).getUserEmail());
         holder.fish.setText("Fish : "+requestModal.get(position).getFishName());
         holder.number.setText(requestModal.get(position).getUserNumber());
