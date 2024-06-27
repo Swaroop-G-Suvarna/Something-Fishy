@@ -18,6 +18,7 @@
         android:textColor="@color/themeColor"
         android:textStyle="bold"
         android:gravity="center"
+        android:fontFamily="@font/k2d_semibold"
         android:layout_gravity="center"
         android:textSize="25dp"/>
 
@@ -93,8 +94,10 @@
         android:layout_weight="1.2"
         android:layout_gravity="center"
         android:text="Login"
+        android:fontFamily="@font/k2d_semibold"
         android:textColor="#fff"
         android:onClick="btnLogin"
+        android:textSize="25sp"
         android:background="@drawable/alert_button"
         />
 </LinearLayout>

@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:ignore="HardcodedText"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
     <LinearLayout
@@ -17,8 +18,9 @@
             android:layout_height="0dp"
             android:layout_weight="2.5"/>
         <ImageView
-            android:src="@drawable/splashimg"
+            android:src="@drawable/fish_carp_svgrepo_com"
             android:layout_width="match_parent"
+            android:contentDescription="App Image"
             android:layout_gravity="center_horizontal"
             android:layout_height="0dp"
             android:layout_weight="3"/>
@@ -29,9 +31,10 @@
             android:layout_height="0dp"
             android:layout_weight="1.5"
             android:textStyle="bold"
+            android:fontFamily="@font/k2d_semibold"
             android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:text="@string/app_name"/>
+            android:textColor="#136C56"
+            android:text="FRESH FINS"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -42,5 +45,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:indeterminateTint="@color/themeColor"
-        android:layout_marginBottom="25dp"/>
+        android:layout_marginBottom="50dp"/>
 </FrameLayout>

@@ -25,7 +25,7 @@
         app:cornerRadius="21dp"
         android:layout_marginBottom="16dp"
         android:drawableTint="#fff"
-        android:backgroundTint="#f85e5e"
+        android:backgroundTint="@color/themeColor"
         android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
         android:text="Next"
         android:paddingHorizontal="21dp"
@@ -74,7 +74,7 @@
     <TextView
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="#f85e5e"
+        android:textColor="@color/purple_500"
         android:id="@+id/tv_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
